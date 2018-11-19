@@ -290,12 +290,11 @@ header .mobile {
 .feature .content {
 padding-top: 1.5rem;
 }
+}
 
 
 
 @media only screen and (max-width: 760px) {
-
-
 
   #features-section {
     padding: 1rem;
@@ -310,9 +309,11 @@ padding-top: 1.5rem;
   .feature h2 {
     font-weight: bold;
   }
+
   .feature h3 {
     text-align: left;
   }
+}
 
 
 @media only screen and (max-width: 450px) {
@@ -320,8 +321,15 @@ padding-top: 1.5rem;
     font-size: 1.125rem;
     font-weight: normal;
     line-height: 1.3rem;
+    text-align: center;
+  }
+  .feature h3 {
+text-align: center;
   }
 
+  #features-section {
+    flex-flow: column wrap;
+  }
 }
 
 /* Filters Section */
@@ -356,6 +364,7 @@ padding-top: 1.5rem;
   padding: 0 1%;
 }
 
+
 @media only screen and (max-width: 760px) {
   #filters-section {
     padding: 1.5rem 0 0 0;
@@ -366,17 +375,18 @@ padding-top: 1.5rem;
   }
 
   #filters-section .content h2 {
-    font-size: 1.5rem;
+    font-size: 1.125rem;
     line-height: 1.3;
     font-weight: bold;
     margin-top: 2rem;
+    font-weight: normal;
   }
 
   #filters-section .content h3 {
+    font-size: .875rem;
+    line-height: 1.4;
     margin-bottom: 3rem;
-
   }
-
 
   #filters-section .images-container {
     padding: 0;
@@ -387,12 +397,14 @@ padding-top: 1.5rem;
   }
 }
 
+
 @media only screen and (max-width: 450px) {
 
 #filters-section .content h2 {
   font-size: 1.125rem;
   font-weight:normal;
 }
+
 }
 
 /* Quotes Section */
@@ -448,19 +460,30 @@ display: flex;
     line-height: 1.4;
     text-align: left;
     justify-content: flex-start;
-    margin-left: 1rem;
-
+    margin: auto;
   }
 
   #quotes-section .quote-citation {
 font-size: 1.5rem;
 line-height: 1.4;
 justify-content: flex-end;
-margin-right: 1rem;
+margin: auto;
   }
 
 
+  @media only screen and (min-width: 360px) {
+
+#quotes-section .content {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  display: block;
 }
+    #quotes-section .quote-citation {
+      padding-top: 1rem;
+    }
+}
+
+
 
 /* Footer */
 
