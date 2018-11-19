@@ -130,6 +130,10 @@ header .mobile {
   background-repeat: no-repeat;
 }
 
+#sign-up-section img {
+  object-fit: cover;
+}
+
 #sign-up-cta {
   padding: 0 5rem 2.5rem 5rem;
   border: solid 1px #979797;
@@ -265,13 +269,13 @@ header .mobile {
   .feature h2 {
     font-size: 1.125rem;
     line-height: 1.3;
-    font-weight: bold;
+    font-weight: normal;
     text-align: left;
     font-size: 2rem;
   }
 
   .feature h3 {
-    font-size: .875rem;
+    font-size: 0.875rem;
     line-height: 1.4;
     font-weight: normal;
     text-align: left;
@@ -287,7 +291,7 @@ header .mobile {
 padding-top: 1.5rem;
 }
 
-}
+
 
 @media only screen and (max-width: 760px) {
   #features-section {
@@ -296,19 +300,25 @@ padding-top: 1.5rem;
   }
 
   .feature {
-margin: 0;
+    margin: 0;
     padding: 1.25rem 1.25rem 0 1rem;
-
   }
-
-
   .feature h2 {
     text-align: center;
+    font-weight: bold;
   }
   .feature h3 {
     text-align: center;
+  }
+
 }
 
+@media only screen and (max-width: 450px) {
+  .feature h2 {
+    font-size: 1.125rem;
+    font-weight: normal;
+    line-height: 1.3rem;
+  }
 
 }
 
@@ -373,6 +383,14 @@ margin: 0;
   #filters-section .extra {
     display: none;
   }
+}
+
+@media only screen and (max-width: 450px) {
+
+#filters-section .content h2 {
+  font-size: 1.125rem;
+  font-weight:normal;
+}
 }
 
 /* Quotes Section */
