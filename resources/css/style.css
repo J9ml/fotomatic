@@ -302,15 +302,12 @@ margin: 0;
   }
 
 
-.feature h2 {
-  text-align: left;
-  font-size: 2rem;
-  font-weight: bold;
+  .feature h2 {
+    text-align: center;
+  }
+  .feature h3 {
+    text-align: center;
 }
-.feature h3 {
-  text-align: left;
-}
-
 
 
 }
